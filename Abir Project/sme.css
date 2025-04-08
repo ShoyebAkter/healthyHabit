@@ -1,0 +1,10 @@
+.products{
+    .name{
+      border-bottom: 1px dotted #ccc;
+      cursor: pointer;
+    }
+  }
+
+  .actionpane{
+    margin-block: 10px;
+  }

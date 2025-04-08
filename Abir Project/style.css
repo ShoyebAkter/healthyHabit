@@ -1,0 +1,229 @@
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+    }
+
+    .navbar-btn .btn-dark {
+      background-color: blueviolet;
+      border: transparent;
+      padding: 10px 40px;
+    }
+
+    .navbar-nav {
+      margin: auto;
+    }
+
+    .cl-bv {
+      color: blueviolet;
+    }
+
+    a.nav-link {
+      color: gray;
+    }
+
+    .navbar-brand {
+      font-size: 2rem;
+    }
+
+    #sec1 {
+      background-image: url(https://thumbs.dreamstime.com/b/d-render-abstract-gradient-colorful-fluids-drops-soaps-bubbles-blobs-floating-air-isolated-white-background-188652305.jpg);
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .modal-contain {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 5px;
+      color: #333;
+      font-family: sans-serif;
+      line-height: 1.5;
+      width: 100%;
+      height: 100%;
+      padding: 1rem 2rem;
+    }
+
+    @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+      .modal-contain {
+        -webkit-backdrop-filter: blur(100px);
+        backdrop-filter: blur(100px);
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .warning {
+        display: none;
+      }
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .frosted-contain {
+      width: 100%;
+      height: 100%;
+    }
+
+    .content h1,h2 {
+      text-align: center;
+      font-size: 900;
+    }
+    .content div {
+        width: 700px;
+        margin-inline: auto;
+        text-align: center;
+    }
+    .bodyfitImg{
+        width: 500px;
+    }
+    .description{
+        display: flex;
+        justify-content:center ;
+    }
+    .buttonDiv{
+        display: flex ;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+    .content {
+      width: 80%;
+      margin: auto;
+    }
+    .boldHighlights{
+        font-weight: 700;
+    }
+    #programs {
+      width: 100%;
+    }
+
+    #programs .row {
+      margin: auto;
+      padding: 5% 5%;
+    }
+
+    .left-most,
+    .center,
+    .right-most {
+      background-color: #f3f3f3;
+    }
+
+    .left-most {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    .right-most {
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .col-lg-3 {
+      padding: 2% 5%;
+    }
+
+    .left-most,
+    .center {
+      border-right: 1px solid blueviolet;
+    }
+
+    #about .col-lg-6 h1 {
+      text-align: left;
+      font-size: 3.5rem;
+    }
+
+    #about .content .btn-dark {
+      background-color: blueviolet;
+      border: transparent;
+      padding: 10px 40px;
+    }
+
+    #experiences {
+      background-color: #f3f3f3;
+      width: 100%;
+    }
+
+    #experiences .row {
+      margin: auto;
+      padding: 5% 5%;
+    }
+
+    #pricing {
+      width: 100%;
+      text-align: center;
+      margin-top: 10%;
+    }
+
+    #pricing .row {
+      margin: auto;
+    }
+
+    .card {
+      border: transparent;
+      background-color: #f3f3f3;
+      border-radius: 20px;
+    }
+
+    .card-text {
+      text-align: center;
+    }
+
+    .col-lg-3 .btn-outline-dark {
+      border: 1px solid blueviolet;
+      color: blueviolet;
+    }
+
+    .col-lg-3 .btn-dark {
+      background-color: blueviolet;
+      border: transparent;
+    }
+
+    .col-lg-3 .btn-lg {
+      width: 80%;
+    }
+
+    .col-lg-3 .btn-outline-dark:hover {
+      background-color: blueviolet;
+      color: white;
+    }
+
+    #testimonials {
+      width: 90%;
+      margin: auto;
+    }
+
+    #testimonials .row {
+      width: 100%;
+    }
+
+    footer .btn-outline-dark {
+      border: 1px solid blueviolet;
+      color: blueviolet;
+    }
+
+    footer .btn-dark {
+      background-color: blueviolet;
+      border: transparent;
+    }
+
+    footer .btn-outline-dark:hover {
+      background-color: blueviolet;
+      color: white;
+    }
+
+    footer input {
+      padding: 1% 5%;
+      border-radius: 10px;
+      border: transparent;
+    }
+
+    footer {
+      margin-top: 15%;
+    }

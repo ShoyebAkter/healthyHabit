@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__buttons">
+          <div class="container__btn-highlight"></div>
+      
+          <button type="button" class="container__toggle-btn container__toggle-btn--login">log in</button>
+          <button type="button" class="container__toggle-btn container__toggle-btn--register">register</button>
+        </div>
+      
+      
+        <!-- Login -->
+        <form class="form form--login">
+          <input type="email" name="email" class="form__input" placeholder="Email" required>
+          <input type="password" name="password" class="form__input" placeholder="Password" required>
+          <div class="form__options">
+            <input type="checkbox" class="form__check-box" id="login">
+            <label for="login" class="form__terms">Remember me</label>
+          </div>
+          <button type="submit" class="form__submit-btn">log in</button>
+        </form>
+        <!-- options -->
+        <div id="options">
+            <label for="userType">Select User Type:</label>
+            <select class="optionDesign" id="userType">
+              <option  value="">-- Choose --</option>
+              <option value="resident">Resident</option>
+              <option value="sme">SME</option>
+              <option value="council">Council</option>
+            </select>
+          </div>
+
+          <!-- council option -->
+          <form method="POST" action="http://localhost/healthyhabit/add_area.php">
+            <div id="councilFields">
+              <label for="areaName">Area Name:</label><br>
+              <input type="text" class="form__input" placeholder="Area Name" id="areaName" name="areaName" required>
+              <br><br>
+              <button id="loginBackCouncilBtn" class="form__submit-btn">Go Back</button>
+              <button id="loginCouncilBtn"  class="form__submit-btn">Add</button>
+            </div>
+          </form>
+          
+
+          <!-- company section  -->
+          <div id="companyFields">
+            <label for="companyName">Company Name:</label><br>
+            <input type="text" class="form__input" placeholder="Company Name" id="companyName" name="companyName" required>
+            <br><br>
+            <label for="contactInfo">Contact Info:</label><br>
+            <input type="number" class="form__input" placeholder="Contact" id="contactInfo" name="contactInfo" required>
+            <br>
+            <button id="loginBackSMEBtn" class="form__submit-btn">Go Back</button>
+            <button id="loginSMEBtn"  class="form__submit-btn">Register</button>
+          </div>
+          <!-- residents -->
+
+          <div id="residentFields">
+            <div class="residentDiv">
+              <div class="residentsDesign">
+                <label for="Area">Area:</label><br>
+                <select class="form__input" id="area" name="area" required>
+                  <option value="">-- Select Area --</option>
+                  <!-- Options will be added by JavaScript -->
+              </select>
+              </div>
+              <div class="residentsDesign">
+                <label for="age">Age:</label><br>
+            <input type="number" class="form__input" placeholder="" id="age" name="age" required>
+            
+              </div>
+            </div>
+            <div>
+              <div class="genderOption">
+                <label for="gender">Select Gender:</label>
+              <select class="optionsDesign" id="gender">
+                <option  value="">-- Choose --</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+              </div>
+              <div class="genderOption">
+                <label for="interest">Interest:</label>
+              <select class="optionsDesign" id="interest">
+                <option  value="">-- Choose --</option>
+                <option value="Nutrition">Nutrition</option>
+                <option value="Fitness">Fitness</option>
+                <option value="Mental Health">Mental Health</option>
+                <option value="Sustainable Living">Sustainable Living</option>
+              </select>
+              </div>
+            </div>
+            <button id="loginBackBtn" class="form__submit-btn">Go Back</button>
+            <button id="loginResidentBtn" class="form__submit-btn">Register</button>
+          </div>
+
+        <!-- Register -->
+        <form class="form form--register" id="registerForm">
+          <input type="text" name="name" class="form__input" placeholder="Name" required>
+          <input type="tel" name="contact" class="form__input" placeholder="Contact" required>
+          <input type="email" name="email" class="form__input" placeholder="Email" required>
+          <input type="password" name="password" class="form__input" placeholder="Password" required>
+          <button type="submit" class="form__submit-btn">Enter</button>
+      </form>
+      </div>
+      
+      <script src="login.js"></script>
+</body>
+</html>
