@@ -13,7 +13,7 @@ require_once 'config.php';
 
 try {
     // Query to get all products
-    $sql = "SELECT * FROM products ORDER BY created_at DESC";
+    $sql = "SELECT * FROM product ORDER BY created_at DESC";
     $result = $conn->query($sql);
 
     if (!$result) {
@@ -30,8 +30,8 @@ try {
             'description' => $row['description'],
             'healthBenefits' => $row['health_benefits'],
             'price' => (float)$row['price'],
-            'stockQuantity' => (int)$row['stock_quantity'],
-            'productCategory' => $row['product_category'],
+            'stockQuantity' => (int)$row['size_or_quantity'],
+            'productCategory' => $row['category'],
             'pricingCategory' => $row['pricing_category'],
             'createdAt' => $row['created_at']
             // Add other fields as needed

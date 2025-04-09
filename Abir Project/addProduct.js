@@ -1,3 +1,16 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Fetch and display products when page loads
+    const div=document.querySelector('.container')
+    const userType=JSON.parse(localStorage.getItem('user'))
+    if(userType){
+        if(userType.user_type!=="sme"){
+            div.style.display='none'
+          }
+    }else{
+        div.style.display='none'
+    }
+  })
+
 document.getElementById('ekleButton').addEventListener('click', async function(event) {
     event.preventDefault();
     const user = JSON.parse(localStorage.getItem('user'));
@@ -28,7 +41,7 @@ document.getElementById('ekleButton').addEventListener('click', async function(e
         if (result.success) {
             alert('Product added successfully!');
             // Optionally reset the form or redirect
-            // window.location.href = 'products.html';
+            window.location.href = 'smeView.html';
         } else {
             alert('Error: ' + result.message);
         }

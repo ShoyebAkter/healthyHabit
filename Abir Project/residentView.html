@@ -4,84 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  
     <link rel="stylesheet" href="resident.css">
 </head>
 
 <body>
-  <h1 class="title-shop">SHOP</h1>
-  <main class="main bd-grid">
-      <article class="card">
-          <div class="card__img">
-              <img src="https://i.postimg.cc/8PkwdTYd/image.png" alt="">
+    <div id="residentDiv">
+        <div class="buttonDiv">
+            <button class="btn btn-primary" id="logout">LogOut</button>
           </div>
-          <div class="card__name">
-              <p>AIR ZOOM PEGASUS</p>
-          </div>
-          <div class="card__precis">
-              <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
-              
-              <div>
-                  <span class="card__preci card__preci--before">$990.00</span>
-                  <span class="card__preci card__preci--now">$749.00</span>
+        <h1 >Product / Services</h1>
+        
+      <main class="main bd-grid">
+          <!-- <article class="card">
+              <div class="card__img">
+                  <img src="https://i.postimg.cc/8PkwdTYd/image.png" alt="">
               </div>
-              <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
-          </div>
-      </article>
-
-      <article class="card">
-          <div class="card__img">
-              <img src="https://i.postimg.cc/4dBHXR1Z/image.png" alt="">
-          </div>
-          <div class="card__name">
-              <p>AIR ZOOM PEGASUS</p>
-          </div>
-          <div class="card__precis">
-              <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
-              <div>
-                  <span class="card__preci card__preci--before">$990.00</span>
-                  <span class="card__preci card__preci--now">$749.00</span>
+              <div class="card__name">
+                  <p>AIR ZOOM PEGASUS</p>
               </div>
-              <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
-          </div>
-      </article>
-
-      <article class="card">
-          <div class="card__img">
-              <img src="https://i.postimg.cc/DfRL0nTy/image.png" alt="">
-          </div>
-          <div class="card__name">
-              <p>AIR ZOOM PEGASUS</p>
-          </div>
-          <div class="card__precis">
-              <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
-              
-              <div>
-                  <span class="card__preci card__preci--before">$990.00</span>
-                  <span class="card__preci card__preci--now">$749.00</span>
+              <div class="card__precis">
+                  <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
+                  
+                  <div>
+                      <span class="card__preci card__preci--before">$990.00</span>
+                      <span class="card__preci card__preci--now">$749.00</span>
+                  </div>
+                  <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
               </div>
-              <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
-          </div>
-      </article>
-
-      <article class="card">
-          <div class="card__img">
-              <img src="straw.png" alt="">
-          </div>
-          <div class="card__name">
-              <p>Stainless Steel Straws</p>
-          </div>
-          <div class="card__precis">
-              <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
-              
-              <div>
-                <span class="description">Alternatives to plastic straws to reduce waste.</span>
-                  <span class="card__preci card__preci--now">$749.00</span>
+          </article>
+    
+          <article class="card">
+              <div class="card__img">
+                  <img src="https://i.postimg.cc/4dBHXR1Z/image.png" alt="">
               </div>
-              
-              <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
-          </div>
-      </article>
-  </main>
+              <div class="card__name">
+                  <p>AIR ZOOM PEGASUS</p>
+              </div>
+              <div class="card__precis">
+                  <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
+                  <div>
+                      <span class="card__preci card__preci--before">$990.00</span>
+                      <span class="card__preci card__preci--now">$749.00</span>
+                  </div>
+                  <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+              </div>
+          </article>
+    
+          <article class="card">
+              <div class="card__img">
+                  <img src="https://i.postimg.cc/DfRL0nTy/image.png" alt="">
+              </div>
+              <div class="card__name">
+                  <p>AIR ZOOM PEGASUS</p>
+              </div>
+              <div class="card__precis">
+                  <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
+                  
+                  <div>
+                      <span class="card__preci card__preci--before">$990.00</span>
+                      <span class="card__preci card__preci--now">$749.00</span>
+                  </div>
+                  <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+              </div>
+          </article>
+    
+          <article class="card">
+              <div class="card__img">
+                  <img src="straw.png" alt="">
+              </div>
+              <div class="card__name">
+                  <p>Stainless Steel Straws</p>
+              </div>
+              <div class="card__precis">
+                  <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
+                  
+                  <div>
+                    <span class="description">Alternatives to plastic straws to reduce waste.</span>
+                      <span class="card__preci card__preci--now">$749.00</span>
+                  </div>
+                  
+                  <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+              </div>
+          </article> -->
+      </main>
+    </div>
+  <script src="resident.js"></script>
 </body>
 
 </html>

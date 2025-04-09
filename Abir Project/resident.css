@@ -31,7 +31,7 @@
     box-sizing: border-box;
 }
 body{
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
     background-color: #fff;
     color: var(--dark-color);
     font-family: var(--body-font);
@@ -75,7 +75,14 @@ a{
     background-color: var(--dark-color);
     margin-left: .25rem;
 }
-
+h1{
+    text-align: center;
+}
+.buttonDiv{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
 /*-- COMPONENT --*/
 .card{
     cursor: pointer;
@@ -181,9 +188,7 @@ footer{
 
 /*-- MEDIA QUERIES --*/
 @media screen and (min-width: 1200px){
-    body{
-        margin: 3rem 0 0 0;
-    }
+    
     .title-shop{
         margin: 0 5rem;
     }
