@@ -195,7 +195,7 @@ const userTypeSelect = document.getElementById('userType');
         ...residentData
     };
 
-    console.log('Submitting:', completeData);
+    // console.log('Submitting:', completeData);
     
     // Send to server
     fetch('http://localhost/healthyhabit/register.php', {
@@ -216,7 +216,7 @@ const userTypeSelect = document.getElementById('userType');
             alert('Registration successful!');
             // Optional: Clear localStorage or redirect
             localStorage.removeItem('formData');
-            // window.location.href = 'success.html';
+            window.location.href = 'login.html';
         } else {
             throw new Error(data.message || 'Registration failed');
         }

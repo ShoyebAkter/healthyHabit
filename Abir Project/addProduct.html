@@ -10,47 +10,48 @@
 </head>
 <body>
     <div class="container w-50 border mt-5 " id="form">
-        <form class="mt-5">
+        <form id="productForm" class="mt-5">
           
           <div class="mb-3">
             <label for="name" class="form-label">Product Name</label>
-            <input type="text" class="form-control" id="name" required>
+            <input type="text" class="form-control" name="name" id="name" required>
           </div>
           <div class="mb-3">
             <label for="description" class="form-label">Product Description</label>
-            <input type="text" class="form-control" id="description" required>
+            <input type="text" name="description" class="form-control" id="description" required>
           </div>
           <div class="mb-3">
             <label for="health" class="form-label">Health Benefits</label>
-            <input type="text" class="form-control" id="health" required>
+            <input type="text" name="health" class="form-control" id="health" required>
           </div>
           <div class="mb-3">
             <label for="price" class="form-label">Price</label>
-            <input type="number" class="form-control" id="price" required>
+            <input type="number" name="price" class="form-control" id="price" required>
           </div>
           <div class="mb-3">
             <label class="form-label" for="stock">Stock Quantity</label>
-            <input type="number" class="form-control" id="stock" required>
+            <input type="number" class="form-control" name="stock" id="stock" required>
           </div>
           <div class="mb-3">
               <label for="pcategory" class="form-label">Product Category</label>
-              <select name="pcategory" id="pcategory" class="ms-1 d-block w-100" required>
+              <select name="pcategory" id="pcategory" name="pcategory" class="ms-1 d-block w-100" required>
                   <option></option>
-                  <option value="Reusable Health Products">Reusable Health Products</option>
-                  <option value="Eco-Friendly Fitness Gear">Eco-Friendly Fitness Gear</option>
-                  <option value="Organic Personal Care Products">Organic Personal Care Products</option>
-                  <option value="Home Wellness Products">Home Wellness Products</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Fashion">Fashion</option>
+                  <option value="Health Products/Services">Health Products/Services</option>
+                  <option value="Home Decor">Home Decor</option>
               </select>
           </div>
           <div class="mb-3">
               <label for="prcategory" class="form-label">Pricing Category</label>
-              <select name="prcategory" id="prcategory" class="ms-1 d-block w-100" required>
+              <select name="prcategory" id="prcategory" name="prcategory" class="ms-1 d-block w-100" required>
                   <option></option>
                   <option value="Affordable">Affordable</option>
                   <option value="Moderate">Moderate</option>
                   <option value="Premium">Premium</option>
               </select>
           </div>
+          <input type="file" id="image" name="image" accept="image/*" required>
           <div class="d-flex justify-content-center">
           <button type="submit" class="btn btn-success text-white btn-outline-success form-control w-50 m-3" id="ekleButton">Add Stock</button>
           </div>

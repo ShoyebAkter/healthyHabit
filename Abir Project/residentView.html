@@ -12,7 +12,20 @@
 <body>
     <div id="residentDiv">
         <div class="buttonDiv">
+            <button id="filter-button" class="button">Filter</button>
             <button class="btn btn-primary" id="logout">LogOut</button>
+          </div>
+          <div id="filter-container" class="filters">
+            <ul class="filters__list">
+              <li>
+                <input id="f1" type="checkbox" />
+                <label for="f1">Health Products/Services</label>
+              </li>
+              <li>
+                <input id="f2" type="checkbox" />
+                <label for="f2">Less than £200</label>
+              </li>
+            </ul>
           </div>
         <h1 >Product / Services</h1>
         
@@ -88,6 +101,10 @@
                   <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
               </div>
           </article> -->
+      </main>
+      <h2>Products with Highest Votes</h2>
+      <main class="productByVote">
+
       </main>
     </div>
   <script src="resident.js"></script>

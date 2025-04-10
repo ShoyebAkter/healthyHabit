@@ -43,7 +43,6 @@ CREATE TABLE vote (
     id INT AUTO_INCREMENT PRIMARY KEY,
     resident_id INT NOT NULL,
     product_id INT NOT NULL,
-    rating TINYINT CHECK (rating BETWEEN 1 AND 5),
     voted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE KEY (resident_id, product_id), -- Prevent duplicate votes
     FOREIGN KEY (resident_id) REFERENCES resident(id),

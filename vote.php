@@ -111,9 +111,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Check for duplicate entry error (error code 1062)
         if ($conn->errno == 1062) {
-            $response['message'] = "You have already voted for this product";
-        } else {
             $response['message'] = "Error: " . $e->getMessage();
+        } else {
+            
+            $response['message'] = "You have already voted for this product";
         }
     }
 } else {

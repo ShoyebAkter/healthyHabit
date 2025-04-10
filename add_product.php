@@ -41,8 +41,9 @@ try {
         size_or_quantity, 
         category, 
         pricing_category,
+        image_url,
         created_at
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, NOW())");
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?,?, NOW())");
 
     if (!$stmt) {
         throw new Exception("Prepare failed: " . $conn->error);
@@ -50,7 +51,7 @@ try {
 
     // Bind parameters
     $stmt->bind_param(
-        "isssdiss", // i: integer, s: string, d: double
+        "isssdisss", // i: integer, s: string, d: double
         $data['sme_id'],
         $data['name'],
         $data['description'],
@@ -58,7 +59,8 @@ try {
         $data['price'],
         $data['stockQuantity'],
         $data['productCategory'],
-        $data['pricingCategory']
+        $data['pricingCategory'],
+        $data['imgUrl']
     );
 
     // Execute the query

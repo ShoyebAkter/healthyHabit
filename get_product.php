@@ -9,6 +9,7 @@ header('Content-Type: application/json');
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     exit(0);
 }
+
 require_once 'config.php';
 
 try {
@@ -22,7 +23,6 @@ try {
 
     $products = [];
     while ($row = $result->fetch_assoc()) {
-        // Format each product (optional: format dates, numbers, etc.)
         $products[] = [
             'id' => $row['id'],
             'sme_id' => $row['sme_id'],
@@ -33,12 +33,12 @@ try {
             'stockQuantity' => (int)$row['size_or_quantity'],
             'productCategory' => $row['category'],
             'pricingCategory' => $row['pricing_category'],
-            'createdAt' => $row['created_at']
-            // Add other fields as needed
+            'createdAt' => $row['created_at'],
+            'imageUrl' => $row['image_url'],
+            'vote_count' => (int)$row['vote_count'] // <-- added here
         ];
     }
 
-    // Return success with products array
     echo json_encode([
         'success' => true,
         'products' => $products
